@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,36 +11,37 @@
     <link rel="stylesheet" href="bootstrap-4.1.3/dist/css/bootstrap.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-<section class="container my-4">
-    <div class="card-body py-0 ">
-        <header>
-            <!-- header -->
-            <p class="text-title">Start Generating Worksheet</p>
-        </header>
-    </div>
 
-    <div class="card-body py-0">
-        <section class="content">
-            <!-- content -->
-            <form action="#" method="GET">
+    <section class="container my-4">
+        <div class="card-body py-0 ">
+            <header>
+                <!-- header -->
+                <p class="text-title">Start Generating Worksheet</p>
+            </header>
+        </div>
 
-                <div class="form-style mb-3">
-                    <div class="font-family-custom font-weight-bold">Question Bank : </div>
-                    <div class="custom-control custom-checkbox pl-0 pt-2">
-                        <label class="font-family-custom pr-3">
+        <div class="card-body py-0">
+            <section class="content">
+                <!-- content -->
+                <form action="#" method="GET">
+
+                    <div class="form-style mb-3">
+                        <div class="font-family-custom font-weight-bold">Question Bank : </div>
+                        <div class="custom-control custom-checkbox pl-0 pt-2">
+                            <label class="font-family-custom pr-5">
                              <input type="radio" value="public_question" name="bank"> Public Question
                         </label>
-                        <label class="font-family-custom">
+                            <label class="font-family-custom">
                             <input type="radio" value="private_question" name="bank"> Private Question
-                        </label>   
+                        </label>
+                        </div>
                     </div>
-                </div>
 
-            <div class="form-style">
-                <div class="font-family-custom font-weight-bold">Number of question :
-                        <select name="cars" class="custom-select mt-2">
+                    <div class="form-style">
+                        <div class="font-family-custom font-weight-bold">Number of question :
+                            <select name="numbers" class="custom-select mt-2">
                           <option selected>Select Number</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -50,81 +52,121 @@
                           <option value="7">7</option>
                           <option value="8">8</option>
                         </select>
-                </div>    
-            </div>
+                        </div>
+                    </div>
 
-                <label class="form-style">
-                    Email
-                    <input type="email" placeholder="email" class="input">
-                </label>
+                    <div class="form-style">
+                        <div class="font-family-custom font-weight-bold">Level & Subject :
+                            <select name="level_subject" class="custom-select mt-2">
+                              <option selected>Select Level & Subject</option>
+                              <option value="primary 1 maths">Primary 1 Maths</option>
+                              <option value="primary 2 maths">Primary 2 Maths</option>
+                              <option value="primary 3 maths">Primary 3 Maths</option>
+                              <option value="primary 4 maths">Primary 4 Maths</option>
+                              <option value="primary 5 maths">Primary 5 Maths</option>
+                              <option value="primary 6 maths">Primary 6 Maths</option>
+                              <option value="primary 1 science">Primary 1 Science</option>
+                              <option value="primary 2 science">Primary 2 Science</option>
+                              <option value="primary 3 science">Primary 3 Science</option>
+                              <option value="primary 4 science">Primary 4 Science</option>
+                              <option value="primary 5 science">Primary 5 Science</option>
+                              <option value="primary 6 science">Primary 6 Science</option>
+                              <option value="secondary 1 maths">Secondary 1 Maths</option>
+                              <option value="secondary 2 maths">Secondary 2 Maths</option>
+                              <option value="secondary 3 maths">Secondary 3 Maths</option>
+                              <option value="secondary 4 maths">Secondary 4 Maths</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <label class="form-style">
-                    Password
-                    <input type="password" placeholder="password" class="input">
-                </label>
+                    <div class="form-style">
+                        <div class="font-family-custom font-weight-bold">Topics :
+                            <div class="row">
+                                <div class="col">
+                                    <select name="Strand" class="custom-select mt-2">
+                                        <option selected>Any Strand</option>
+                                        <option value="whole number">Whole Numbers</option>
+                                        <option value="fractions">Fractions</option>
+                                        <option value="money">Money</option>
+                                        <option value="decimals">Decimals</option>
+                                        <option value="ratio">Ratio</option>
+                                        <option value="percentage">Percentage</option>
+                                        <option value="algebra">Algebra</option>
+                                        <option value="measurements basics">Measurements Basics</option>
+                                        <option value="geometry">Geometry</option>
+                                        <option value="perimeter area">Perimeter & Area</option>
+                                        <option value="volume">Volume Of Cube & Cuboid</option>
+                                        <option value="speed rate">Speed & Rate</option>
+                                        <option value="data analysis">Data Analysis</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <select name="Topics" class="custom-select mt-2">
+                                    <option selected>Any Topic</option>
+                                    <option value="picture graphs">Picture Graphs</option>
+                                    <option value="bar graphs">Bar Graphs</option>
+                                    <option value="tables line graphs">Tables & Line Graphs</option>
+                                    <option value="average">Average</option>
+                                    <option value="pie charts">Pie Charts</option>
+                                    <option value="word problems">Word Problems involving DATA ANALYSIS</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <label class="form-style">
-                    Alamat
-                    <textarea class="input"></textarea>
-                </label>
+                    <div class="form-style">
+                        <div class="font-family-custom font-weight-bold">Learning Objectives :
+                            <select name="Learning" class="custom-select mt-2">
+                              <option selected>Any Heuristic</option>
+                              <option value="none">none</option>
+                              <option value="none">none</option>
+                              <option value="none">none</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <fieldset class="form-style">
-                    <legend>Hobby</legend>
-                    <label>
-                        <input type="checkbox" value="coding"> Koding
-                    </label>
-                    <label>
-                            <input type="checkbox" value="basket"> Basket
-                    </label>
-                    <label>
-                            <input type="checkbox" value="voli"> voli
-                    </label>
-                    <label>
-                            <input type="checkbox" value="futsal"> futsal
-                    </label>
-                </fieldset>
+                    <div class="form-style mb-3">
+                        <div class="font-family-custom font-weight-bold">Question Types : </div>
+                        <div class="custom-control custom-checkbox pl-0 pt-2">
+                            <label class="font-family-custom pr-5">
+                                 <input type="radio" value="MCQ" name="types"> MCQ                            </label>
+                            <label class="font-family-custom">
+                                <input type="radio" value="Non-MCQ" name="types"> Non-MCQ
+                            </label>
+                        </div>
+                    </div>
 
-                <fieldset class="form-style">
-                    <legend>Pekerjaan</legend>
-                    <label>
-                        <input type="radio" value="Direktur" name="Pekerjaan"> Direktur
-                    </label>
-                    <label>
-                            <input type="radio" value="manager" name="Pekerjaan"> manager
-                    </label>
-                    <label>
-                            <input type="radio" value="swasta" name="Pekerjaan"> swasta
-                    </label>
-                    <label>
-                            <input type="radio" value="belum bekerja" name="Pekerjaan"> belum bekerja
-                    </label>
-                </fieldset>
+                    <div class="form-style mb-3">
+                        <div class="font-family-custom font-weight-bold">Difficulty Level : </div>
+                        <div class="custom-control custom-checkbox pl-0 pt-2">
+                            <label class="font-family-custom pr-5">
+                                <input type="checkbox" value="easy" name="easy"> Easy                            </label>
+                            <label class="font-family-custom pr-5">
+                                <input type="checkbox" value="normal" name="normal"> Normal
+                            </label>
+                            <label class="font-family-custom pr-5">
+                                <input type="checkbox" value="hard" name="hard"> Hard
+                            </label>
+                            <label class="font-family-custom pr-5">
+                                <input type="checkbox" value="genius" name="genius"> Genius
+                            </label>
+                        </div>
+                    </div>
 
-                <label class="form-style">
-                    Ukuran Sepatu
-                    <select class="input">
-                        <option value="39">Ukuran 39</option>
-                        <option value="40">Ukuran 40</option>
-                        <option value="41">Ukuran 41</option>
-                        <option value="42">Ukuran 42</option>
-                    </select>
-                </label>
+                    <div class="row">
+                        <div class="mr-5 col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+                            <button type="button" class="btn btn-color-1 font-family-custom btn-custom">Generate</button>
+                        </div>
+                        <div class="mr-5 col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xs-offset-2 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+                            <button type="button" class="btn btn-color-2 font-family-custom btn-custom">Reset</button>
+                        </div>
+                    </div>
 
-                <label class="form-style">
-                    warna favorit
-                    <input list="warna" class="input">
-                    <datalist id="warna">
-                        <option value="M">Merah
-                        <option value="K">Kuning
-                        <option value="B">Biru
-                        <option value="H">Hijau
-                    </datalist>
-                </label>
-
-                    <input type="submit" value="kirim">
-            </form>
-        </section>
+            </section>
         </div>
     </section>
 </body>
+
 </html>
