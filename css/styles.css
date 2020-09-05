@@ -22,7 +22,19 @@ header{
     font-family: 'Grandstander', cursive;
     text-align: center;
     color: white;
-    padding-top: 14px;
+    font-size: 20px;
+    padding-top: 12px;
 }
+
+.font-family-custom {
+    font-family: 'Grandstander', cursive;
+    font-size: 18px;
+}
+
+.size-width-select {
+    width: 200px;
+}
+
+
 
 

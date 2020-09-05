@@ -3,6 +3,11 @@
     margin-bottom: 25px;
 }
 
+.form-style-inline  {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
 .form-style .input {
     width: 100%;
     padding: 5px;

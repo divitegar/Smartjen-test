@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>komponen | Home</title>
+    <title>SmartJen | Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/form.css" />
@@ -22,17 +22,38 @@
 
     <div class="card-body py-0">
         <section class="content">
+            <!-- content -->
             <form action="#" method="GET">
 
-                <label class="form-style">
-                    Question Bank
-                    <input type="text" placeholder="nama lengkap" class="input">
-                </label>
+                <div class="input-group mb-4">
+                    <div class="font-family-custom font-weight-bold">Question Bank : </div>
+                    <div class="custom-control custom-checkbox">
+                        <label class="font-family-custom pr-3">
+                             <input type="radio" value="public_question" name="bank"> Public Question
+                        </label>
+                        <label class="font-family-custom">
+                            <input type="radio" value="private_question" name="bank"> Private Question
+                        </label>   
+                    </div>
+                </div>
 
-                <label class="form-style">
-                    Telepon
-                    <input type="number" placeholder="telepon" class="input">
-                </label>
+            <div class="input-group mb-4">
+                <div class="font-family-custom font-weight-bold">Number of question :
+                    <label class="font-family-custom pl-3">
+                        <select name="cars" class="custom-select" style="width: 300px">
+                          <option selected>Select Number</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                        </select>
+                    </label>
+                </div>    
+            </div>
 
                 <label class="form-style">
                     Email
