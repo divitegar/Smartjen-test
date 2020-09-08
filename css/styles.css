@@ -14,8 +14,6 @@ header {
     padding: 40px;
     width: 100%;
     box-sizing: border-box;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
 }
 
 .text-title {
@@ -45,4 +43,13 @@ header {
     background: rgb(201, 201, 201);
     color: black;
     text-align: center;
+}
+
+.text-intro {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 300px;
+    padding-bottom: unset;
+    font-size: 22px;
 }
